@@ -15,7 +15,7 @@ Game ← {
   Turn ← SpawnTile∘{b←𝕩 ⋄ Move _retry_ (≢⟜b) 𝕩}
 
   board ← SpawnTile∘{𝕩‿𝕩⥊0} ⍎GetInput⟨"Enter Board Size:", "4"‿"5"‿"6"⟩
-  𝕤 ⋄ Turn _while_ (¬64⊸∊) board
+  𝕤 ⋄ Turn _while_ (¬2048⊸∊) board
  }
 
  •←Game @
